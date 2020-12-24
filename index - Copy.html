@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Alexandrie</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta
+      name="description"
+      content="Alexandrie - Optimiser vos politiques et procédures"
+    />
+    <meta name="apple-mobile-web-app-title" content="PowerTree">
+    <meta name="application-name" content="PowerTree">
+    <meta name="msapplication-TileColor" content="#ab586e">
+    <meta name="theme-color" content="#ab586e">
+
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+
+    <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest?v=WG2bMoY64m">
+    <link rel="mask-icon" href="%PUBLIC_URL%/safari-pinned-tab.svg?v=WG2bMoY64m" color="#ab586e">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico?v=WG2bMoY64m">
+
+    <script>
+      document.onreadystatechange = function () {
+        if (document.readyState == "interactive") {
+          let marginTop = (window.innerHeight - document.getElementById('container').offsetHeight) / 3
+          // if(marginTop > 200) {
+          //   marginTop = marginTop - 50
+          // }
+          document.getElementById('container').style.marginTop = `${marginTop}px`
+        }
+      }
+    </script>
+  </head>
+  <body class="mdc-typography" spellcheck="false">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#FFFFFF" fill-opacity="1" d="M0,224L48,229.3C96,235,192,245,288,229.3C384,213,480,171,576,138.7C672,107,768,85,864,69.3C960,53,1056,43,1152,53.3C1248,64,1344,96,1392,112L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+    <!-- <div id="gray-filler">
+    </div> -->
+    <div id="wrapper">
+      <div id="sidebar">
+        
+        <div id="container">
+
+          <div id="logo">
+            <img class="logo" src="logo2.svg"/>
+            <span>Alexandrie</span>
+          </div>
+  
+          <div id="content">
+            <h1>Nous serons bientôt là.</h1>
+            <h2>Alexandrie est un logiciel de gestion des protocoles et procédures.</h2>
+            <div class="clearer"></div>
+            <p>Notre outil aide à la formation des employés dans le but d'améliorer les performances organisationnelles des hôpitaux du Québec.</p>
+            <p>En attendant, discutons de ce que nous pouvons faire pour vous:</p>
+            <div>
+              <div class="email-comp">
+                <input placeholder="Entrez votre courriel" class="email-comp-text" type="text" />
+                <input class="email-comp-input" type="submit" value="Soumettre"/>
+              </div>
+            </div>
+            <div>
+              <img src="fcb_logo.png"/>
+              <img src="msgr.png"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

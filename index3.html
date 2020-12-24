@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Alexandrie</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="styles2.css"> -->
+    <style>
+      html {
+  box-sizing: border-box;
+}
+*,*::before,*::after {
+  box-sizing: inherit;
+}
+body {
+	margin: 0;
+}
+
+@media (min-width: 2000px) {
+  .container {
+      max-width: 1920px !important; 
+	}
+	h1{
+		font-size: 4rem;
+	}
+	p {
+		font-size: 1.5rem;
+	}
+	.alx > input {
+		font-size:24px;
+	}
+	#logo{
+		font-size: 80px;
+	}
+}
+
+@media (max-width: 900px) {
+	h1{
+		font-size: 2rem !important;
+	}
+	p {
+		font-size: 0.9rem !important;
+	}
+	.alx > input {
+		font-size:18px !important;
+	}
+	#logo{
+		font-size: 40px !important;
+	}
+	.alx{
+		margin-left:0px !important;
+	}
+	.alx > input {
+		height:50px !important;
+		border-radius: 25px !important;
+		font-size:14px !important;
+		padding-left:10px !important;
+	}
+	
+	.btn-primary {
+		border-radius: 25px !important;
+		height:50px !important;
+		padding: 10px 20px !important;
+	}
+}
+
+.wave-container {
+	/* background: #F1F1F1; */
+	
+	background-image: url('wave.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: -230px -330px;
+}
+.wave-container > svg {
+  display: block;
+}
+h1 {
+	font-size:3rem;
+	color: black;
+}
+p {
+	font-size: 1rem;
+}
+
+#logo{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	font-family: 'coves';
+	font-size: 60px;
+	font-weight: bold;
+	color: black;
+	margin-top: 60px;
+}
+
+.logo{
+	height: 70px;
+	width: 70px;
+	margin-right:30px;
+}
+
+#content{
+	margin-bottom: -1000px;
+}
+.alx{
+	margin-left:-15px;
+}
+.alx > input {
+	border-radius: 35px;
+	background-color: #F3F3F3;
+	border: none;
+	height:70px;
+	font-size:18px;
+	padding-left:30px;
+}
+
+.btn-primary {
+	background-color: #4A674F;
+	border-radius: 35px;
+	height:70px;
+	border:none;
+	font-weight: bold;
+	padding: 20px 40px;
+}
+.btn-primary:hover {
+	background-color: #324e37;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+	background-color: #394b3c;
+	box-shadow: none;
+	outline: 0;
+	border:none;
+}
+.btn-primary:focus {
+	background-color: #394b3c;
+	outline: 0;
+	box-shadow: none;
+	border:none;
+}
+
+*:focus {
+	outline: none;
+}
+textarea:focus, input:focus{
+	outline: none;
+}
+.form-control:focus {
+	color: #495057;
+	background-color: #F3F3F3;
+	border:none;
+	outline: 0;
+	box-shadow: none;
+}
+
+.input-group>.input-group-append>.btn, .input-group>.input-group-append>.input-group-text, .input-group>.input-group-prepend:first-child>.btn:not(:first-child), .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child), .input-group>.input-group-prepend:not(:first-child)>.btn, .input-group>.input-group-prepend:not(:first-child)>.input-group-text {
+	border-top-left-radius: 35px;
+	border-bottom-left-radius: 35px;
+	margin-left:-25px;
+	z-index: 5 ;
+}
+
+.text-green {
+	font-size: 32px;
+	color: #4A674F;
+}
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wave-container">
+      <div id="content" class="container">
+        <div class="row">
+          <div class="col">
+            <div id="logo">
+              <img class="logo" src="logo2.svg"/>
+              <div>Alexandrie</div>
+            </div>
+          </div>
+        </div>
+        <div class="spacer my-xl-3"></div>
+        <div class="row my-5">
+          <div class="col-lg-6 col-sm-12 my-auto">
+            <h1>Gestion optimisée de vos protocoles et procédures</h1>
+            <p class="mt-5">Créé en 2020, ce logiciel informatique aide à la formation des employés dans le but d'améliorer les performances organisationnelles des hôpitaux du Québec.</p>
+            <div class="input-group alx mt-5">
+              <input type="text" class="form-control form-control-lg" placeholder="Entrez votre addresse courriel" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button">En savoir plus</button>
+              </div>
+            </div>
+            <div class="mt-5">
+              <a href="https://www.facebook.com/Alexandrie.co">
+                <i class="text-green fab fa-facebook-messenger mr-2" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.facebook.com/Alexandrie.co">
+                <i class="text-green fas fa-envelope" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="d-none d-lg-block mt-md-3 my-lg-auto col-lg-6 col-sm-12 text-right">
+            <img class="img-fluid" src="laptop.png"/>
+          </div>
+        </div>
+        <div class="my-xl-5 py-xl-5"></div>
+      </div>
+
+<!-- 
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ffffff" fill-opacity="1" d="M0,96L80,117.3C160,139,320,181,480,186.7C640,192,800,160,960,138.7C1120,117,1280,107,1360,101.3L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+      </svg> -->
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </body>
+</html>
